@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../../services/products.service';
+import { ProductsService } from '../../../services/products.service';
 import { Observable } from 'rxjs';
-import { ProductInterface } from '../../interfaces/productInterface';
+import { ProductInterface } from '../../../interfaces/productInterface';
 import { AsyncPipe } from '@angular/common';
 import { ProductCardComponent } from '../product-card/product-card.component';
 import { MatGridList, MatGridTile } from '@angular/material/grid-list';
-import { BasketService } from '../../services/basket.service';
+import { BasketService } from '../../../services/basket.service';
 
 @Component({
   selector: 'app-products-list',

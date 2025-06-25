@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { ProductInterface } from '../../interfaces/productInterface';
+import { ProductInterface } from '../../../interfaces/productInterface';
 import {
   MatCardModule,
 } from '@angular/material/card';

@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
-import { BasketService } from '../../services/basket.service';
+import { BasketService } from '../../../services/basket.service';
 import { Observable } from 'rxjs';
 import { BasketItemComponent } from '../basket-item/basket-item.component';
-import { BasketInterface } from '../../interfaces/basketInterface';
+import { BasketInterface } from '../../../interfaces/basketInterface';
 import { MatAnchor } from '@angular/material/button';
 import { RouterLink } from '@angular/router';
 
