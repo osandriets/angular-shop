@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ProductInterface } from '../interfaces/productInterface';
-import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { BasketInterface } from '../interfaces/basketInterface';
 
 @Injectable({
