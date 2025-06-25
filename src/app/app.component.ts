@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { AppToolbarComponent } from './components/app-toolbar/app-toolbar.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    MatSlideToggleModule,
+    AppToolbarComponent,
+    RouterOutlet,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  title = 'shop';
+  title = 'Shop';
 }
