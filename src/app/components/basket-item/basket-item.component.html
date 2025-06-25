@@ -1,0 +1,35 @@
+<mat-card appearance="outlined">
+  <mat-card-content>
+    <img mat-card-image
+         [src]="product.url"
+         alt="Photo of a Shiba Inu">
+
+    <div class="w-100">
+      <p>{{ product.name }}</p>
+      <p>{{ product.count }}</p>
+
+      <mat-card-actions>
+        <h3>{{ product.price }}  €</h3>
+
+        <span class="spacer"></span>
+
+        <button mat-fab
+                color="warn"
+                (click)="onDelete(product)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+
+<!--TODO add form-->
+<!--    <form class="example-form">-->
+<!--      <mat-form-field class="example-full-width">-->
+<!--        <mat-label>Favorite food</mat-label>-->
+<!--        <input matInput placeholder="Ex. Pizza"-->
+<!--               type="number"-->
+<!--               [value]="product.count">-->
+<!--      </mat-form-field>-->
+<!--    </form>-->

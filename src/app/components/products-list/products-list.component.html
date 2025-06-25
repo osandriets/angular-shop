@@ -1,0 +1,12 @@
+<mat-grid-list cols="2"
+               rowHeight="2:1">
+  @for (product of products$ | async; track product.uuid) {
+    <mat-grid-tile>
+      <app-product-card [product]="product"
+                        (add)="add($event)"></app-product-card>
+    </mat-grid-tile>
+  } @empty {
+    <div>There are no items.</div>
+  }
+</mat-grid-list>
+

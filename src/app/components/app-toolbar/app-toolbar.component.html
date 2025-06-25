@@ -1,0 +1,19 @@
+<mat-toolbar *ngIf="{basket: basket$ | async} as data">
+  <button mat-button
+          [routerLink]="['/']">
+    {{ title }}
+  </button>
+
+  <span class="spacer"></span>
+
+  <button mat-icon-button
+          color="primary"
+          [routerLink]="['/basket']">
+    <mat-icon matBadgeColor="warn"
+              [matBadge]="getCount(data.basket || [])">
+      shopping_cart
+    </mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-divider></mat-divider>

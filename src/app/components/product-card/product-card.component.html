@@ -1,0 +1,21 @@
+<mat-card appearance="outlined">
+  <img mat-card-image
+       [src]="product.url"
+       alt="Photo item">
+
+  <mat-card-content>
+    <p>{{ product.name }}</p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <h3>{{ product.price }}  €</h3>
+
+    <span class="spacer"></span>
+
+    <button mat-fab
+            color="primary"
+            (click)="onAdd(product)">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,24 @@
+@if (basket$ | async; as basket) {
+  <h2>Basket</h2>
+
+  @for (item of basket; track item.uuid) {
+    <app-basket-item [product]="item"
+                     (delete)="delete($event)"></app-basket-item>
+  } @empty {
+    <p>There are no items in the basket.</p>
+
+    <p>
+      <a mat-button
+         color="primary"
+         [routerLink]="['/']">
+        Add items
+      </a>
+    </p>
+  }
+
+  @if (getTotal(basket); as total) {
+    <h3>Total: {{ total }} €</h3>
+  }
+}
+
+

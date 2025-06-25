@@ -1,0 +1,14 @@
+:host {
+  margin: 0 16px 0 16px;
+
+  img {
+    width: 200px;
+    margin: 4px auto;
+  }
+
+  mat-card-actions {
+    margin: 0 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
